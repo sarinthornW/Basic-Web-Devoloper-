@@ -1,0 +1,92 @@
+.modal-open2 {
+    border-radius: 2px;
+    background: rgb(0, 123, 255);
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+.modal-radio2 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s, transform .5s;
+}
+
+#modal-open2:checked+.modal2 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal2 .content2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    max-height: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.imageCart {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.imageCart .text2{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: center;
+    width: 60%;
+}
+
+.name2 {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.price2 {
+    color: red;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.scrollBox {
+    height: 450px;
+    width: 450px;
+    overflow: auto;
+}

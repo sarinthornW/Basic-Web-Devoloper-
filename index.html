@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>NCTZen Market</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<!--p class="left header">
+		<b>NCTZen Market</b>
+		<span class="right">
+			<i class="fa fa-shopping-cart"></i>
+		<span>
+	<p-->
+
+	<div class="header">
+		<div style="font-size:48px;"><b>NCTZen Market</b></div>
+		<div>
+			<div class="content2">
+		        <label class="modal-open2" for="modal-open2" style="text-align:right;font-size:30px;background:white;border:0px;color:black;">
+		           <i class="fa fa-shopping-cart"></i>
+		       </label>
+		        <input type="radio" name="modal2" value="open" id="modal-open2" class="modal-radio2" />
+		        <div class="modal2">
+		            <label class="modal-label2 overlay2">
+		                <input type="radio" name="modal2" value="close" class="modal-radio2"/>
+		            </label>
+		            <div class="content2">
+		               <label class="modal-label2">
+		               		<input type="radio" name="modal2" value="close" class="modal-radio2"/>
+		                	<span style="float: right;">&#10006;</span>
+		            	</label>
+		            	<div><br>
+		                	<div class="scrollBox" id="myCart"></div>
+		                </div>
+		                </div>
+		            </div>
+		        </div>
+    		</div>
+		</div>
+	</div>
+		
+	<hr>
+
+	<div class="banner">		
+  		<img class="mySlides" src="https://i0.wp.com/dudeplace.co/wp-content/uploads/2020/09/nct2020.jpg?resize=1000%2C500&ssl=1" style="width:100%">
+  		<img class="mySlides" style="display: none;" src="https://th.bing.com/th/id/R.029855f0178b49e8b47e221951352538?rik=aydLv5jwEmfkYQ&pid=ImgRaw&r=0" style="width:100%">
+  		<img class="mySlides" style="display: none;" src="https://img.barks.jp/img/article/1000194969/H/1200.jpg">
+  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<div class="container">
+		<div class="album">
+			<img class="cover" src="https://th.bing.com/th/id/R.84e062cd5bcf1c061c8b5659f3dbb3a7?rik=t5K%2febc7sAwZDQ&riu=http%3a%2f%2fwww.kstar-mp3.us%2fwp-content%2fuploads%2f2016%2f07%2fNCT-127-NCT-127-1st-Mini-Album-320kbps-www.kstar-mp3.us_.jpg&ehk=l707i23%2ffY3Q6UK2oyLtke1Imt71yetQFXdG4P5WhA4%3d&risl=&pid=ImgRaw&r=0">
+			<h4>NCT #127 - The 1st Mini Album</h4>
+			<h3>$18</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-0')">Order</p>
+		       </label>
+		        <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
+		        <div class="modal">
+		            <label class="modal-label overlay">
+		                <input type="radio" name="modal" value="close" class="modal-radio"/>
+		            </label>
+		            <div class="content">
+		               <label class="modal-label">
+		               		<input type="radio" name="modal" value="close" class="modal-radio"/>
+		                	<span style="float: right;">&#10006;</span>
+		            	</label>
+		                <div><br>
+		                	<div id="album-0"></div>
+		                </div>
+		                <div class="order">
+		                	<hr>
+		                	<input class="number" type="number" min="1" value="1">
+		                </div>
+		                <div class="add">
+		                	<label class="modal-label">
+		               			<input type="radio" name="modal" value="close" class="modal-radio"/>
+		                		<span onclick="add2Cart()" class="add-btn">Add to Shopping Cart</span>
+		            		</label>
+		                </div>
+		            </div>
+		        </div>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://th.bing.com/th/id/R.4eb7694948a72fc7caad14066b9a2461?rik=Va8p9i8FIowwKg&riu=http%3a%2f%2fsocdn.smtown.com%2fupload%2fstarhome%2flayout%2fnct127%2fver03%2fteaser%2fpc%2fbg.jpg&ehk=NlyUAAqSklesb0Th3XBcA%2fJerpbM0LjT12I0Xp5JMq8%3d&risl=&pid=ImgRaw&r=0">
+			<h4>NCT #127 Cherry Bomb - The 3er Mini Album</h4>
+			<h3>$19</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-1')">Order</p>
+		       </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://th.bing.com/th/id/R.45ff4c5f81893967d288472ac4c37629?rik=dcp1rSkA4Obdpw&riu=http%3a%2f%2fimages.genius.com%2f1ac8376d0d8b8a18be790bd12a603e1f.1000x1000x1.jpg&ehk=Ri%2f2JA0xc9XjoxF9q9ESQ5u6C2Q2%2bfEU0P6MMlamluc%3d&risl=&pid=ImgRaw&r=0">
+			<h4>We Young - The 1st Mini Album</h4>
+			<h3>$17</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-2')">Order</p>
+		        </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://vignette.wikia.nocookie.net/kpop/images/e/eb/NCT_2018_Empathy_album_cover.png/revision/latest?cb=20180315003656">
+			<h4>NCT 2018 Empathy</h4>
+			<h3>$20</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-3')">Order</p>
+		        </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://th.bing.com/th/id/OIP.Y7p_twckILqRDMrdYnfUmgHaJQ?pid=ImgDet&rs=1">
+			<h4>NCT #127 Regular-Irregular - The 1st Album</h4>
+			<h3>$25</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-4')">Order</p>
+		        </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://www.allkpop.com/upload/2018/11/af_org/25090757/nct-127.jpg">
+			<h4>NCT #127 Regulate - The 1st Album Repackage</h4>
+			<h3>$17</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-5')">Order</p>
+		        </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://i.scdn.co/image/176131c222df954d6c45dd50362942d3832f29fa">
+			<h4>NCT #127 We are Superhuman - The 4th Mini Album</h4>
+			<h3>$19</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-6')">Order</p>
+		        </label>
+    		</div>
+		</div>
+		<div class="album">
+			<img class="cover" src="https://images.genius.com/1ee2d0afeacbc279803786da22338dfe.1000x1000x1.jpg">
+			<h4>NCT #127 Neo Zone - The 2nd Album</h4>
+			<h3>$25</h3>
+			<div class="content">
+		        <label class="modal-open" for="modal-open">
+		           <p onclick="Order('album-7')">Order</p>
+		        </label>
+    		</div>
+		</div>
+	</div>
+</body>
+</html>
